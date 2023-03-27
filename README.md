@@ -1,13 +1,101 @@
-# GitHub Codespaces ♥️ Express
+# Calculator Microservice
 
-Welcome to your shiny new Codespace running Express! We've got everything fired up and running for you to explore Express.
+A simple microservice that performs basic arithmetic operations on two numbers.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## Usage
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+The microservice provides the following endpoints:
 
-To run this application:
+- `/add`: Adds two numbers.
+- `/subtract`: Subtracts two numbers.
+- `/multiply`: Multiplies two numbers.
+- `/divide`: Divides two numbers.
 
-```
-npm start
-```
+### `/add`
+
+URL: `/add?num1=[number]&num2=[number]`
+
+Performs an addition operation on `num1` and `num2`.
+
+#### Parameters
+
+| Name  | Type   | Description             |
+|-------|--------|-------------------------|
+| `num1` | number | The first number to add. |
+| `num2` | number | The second number to add. |
+
+#### Response
+
+Returns an HTML page with the result of the addition operation.
+
+### `/subtract`
+
+URL: `/subtract?num1=[number]&num2=[number]`
+
+Performs a subtraction operation on `num1` and `num2`.
+
+#### Parameters
+
+| Name  | Type   | Description                |
+|-------|--------|----------------------------|
+| `num1` | number | The number to subtract from. |
+| `num2` | number | The number to subtract.     |
+
+#### Response
+
+Returns an HTML page with the result of the subtraction operation.
+
+### `/multiply`
+
+URL: `/multiply?num1=[number]&num2=[number]`
+
+Performs a multiplication operation on `num1` and `num2`.
+
+#### Parameters
+
+| Name  | Type   | Description             |
+|-------|--------|-------------------------|
+| `num1` | number | The first number to multiply. |
+| `num2` | number | The second number to multiply. |
+
+#### Response
+
+Returns an HTML page with the result of the multiplication operation.
+
+### `/divide`
+
+URL: `/divide?num1=[number]&num2=[number]`
+
+Performs a division operation on `num1` and `num2`.
+
+#### Parameters
+
+| Name  | Type   | Description                |
+|-------|--------|----------------------------|
+| `num1` | number | The number to divide.       |
+| `num2` | number | The number to divide by.    |
+
+#### Response
+
+Returns an HTML page with the result of the division operation.
+
+
+## Demonstration
+
+![Homepage endpoint](./assets/home%20page.PNG)
+
+![Addition endpoint](./assets/addition.PNG)
+
+![Subtraction endpoint](./assets/Substraction.PNG)
+
+![Multiplication endpoint](./assets/Multiplication.PNG)
+
+![Division endpoint](./assets/Division.PNG)
+
+![Errors endpoint](./assets/errors.PNG)
+
+
+## Credits
+
+By Rohit Bajaj
+StudentID - 221036191
